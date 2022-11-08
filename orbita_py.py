@@ -1,3 +1,9 @@
+"""
+Fecha: 31 oct 2022
+Autor: Paula Godoy
+Tema: Cython
+Topica: Problema de la orbita
+"""
 from math import sqrt
 
 class Planet(object):
@@ -37,7 +43,3 @@ def step_time(planet, time_span, n_steps):
 
     for j in range(n_steps):
         single_step(planet, dt)
-
-def main():
-    Planeta = Planet()
-    step_time(Planeta, 5000, 100000)
